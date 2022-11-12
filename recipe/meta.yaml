@@ -1,5 +1,5 @@
 {% set name = "pyNSID" %}
-{% set version = "0.0.3" %}
+{% set version = "0.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ed3afeba60af788def69e5facf8a0948be81ac0b92ba3d450e9aa7b691182b01
+  sha256: da77c508e2ef73699ff38400585b2ad110ccdbd19c2f582e0a9afe9da7a0c742
 
 build:
   noarch: python
@@ -32,7 +32,7 @@ requirements:
 test:
   imports:
     - pyNSID
-    
+
 about:
   home: https://github.com/pycroscopy/pyNSID
   license: MIT
